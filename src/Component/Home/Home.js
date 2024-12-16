@@ -118,7 +118,7 @@ function Home() {
       occupation: "Student",
       img: `${testrimonial_img_4}`,
      description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officia aliquid iusto illo laboriosam, sit, nostrum id quaerat pariatur repellendus quis ullam hic in, non harum inventore cumque laudantium . "
-    }]
+    }];
 
   return (
     <div id="home">

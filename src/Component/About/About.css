@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --primary-color: #00C7A2;
+    --color: #202020;
+    --color1: #FFFFFF;
+  --color2: #FDC800;
+  --color3: #FCFCFC;
+  --color4: #B1B1B1;
+  --color5: #002147;
+    --font1: "Cabin", sans-serif;
+    --font2: "Bitter", serif;
+    --font3: "Outfit", sans-serif;
+    --font4: "Raleway", sans-serif;
+    --font5: "Inter", sans-serif;
+}
+
+
+#about{
+    padding-top: 10vh;
+}
+
+@media(max-width: 1439px){
+  #about{
+    padding-top: 16vh;
+}
+}
+
+@media(max-width: 1025px){
+  #about{
+    padding-top: 11.5vh;
+}
+}
+
+
+@media(max-width: 769px){
+  #about{
+    padding-top: 14.5vh;
+  }
+}
+
+
+/* Section 1 */
+
+
+#about-section-1{
+  background-image: url("../../JalAssets//jal_bg_img_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%; 
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+#about-section-1-div-1-p-1{
+  font-family: var(--font1);
+font-size: 32px;
+font-weight: 700;
+text-align: center;
+color: var(--color1);
+}
+
+#about-section-1-div-1-p-2{
+  font-family: var(--font1);
+font-size: 24px;
+font-weight: 700;
+text-align: center;
+color: var(--color1);
+}
+
+
+
+/* section 2 */
+
+
+
+#about-section-2{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+#about-section-2-div-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+
+#about-section-2-div-1-2-1{
+display: flex;
+flex-direction: row;
+gap: 30px;
+}
+
+#about-section-2-div-1-2-1-p-1{
+  font-family:  var(--primary-color);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+#about-section-2-div-1-2-1-line{
+  width: 50px;
+  height: 3px;
+  background-color: var(--color);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+#about-section-2-div-1-2-2-p-1{
+  font-family: var(--font1);
+font-size: 18px;
+font-weight: 600;
+color: var(--color);
+}
+
+#about-section-2-div-1-2-3-p-1{
+  font-family: var(--font1);
+font-size: 14px;
+font-weight: 400;
+line-height: 30px;
+text-align: justify;
+color: var(--color);
+width: 652px;
+}
+
+#about-section-2-div-1-2-4-p-1{
+  font-family: var(--font1);
+font-size: 14px;
+font-weight: 400;
+line-height: 30px;
+text-align: justify;
+color: var(--color);
+width: 652px;
+}
+
+#about-section-2-div-1-2-5-button{
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--color1);
+  font-family: var(--font1);
+font-size: 18px;
+font-weight: 500;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 30px;
+padding-right: 30px;
+border-radius: 20px 0px 20px 0px;
+}
+
+@media(max-width: 1025px){
+
+  #about-section-2-div-1-2-3-p-1{
+    width: 420px;
+  }
+
+  #about-section-2-div-1-2-4-p-1{
+    width: 420px;
+  }
+}
+
+@media(max-width: 1022px){
+ 
+  #about-section-2-div-1-1{
+    display: none;
+  }
+
+  #about-section-2-div-1-2-3-p-1{
+    width: 100%;
+  }
+
+  #about-section-2-div-1-2-4-p-1{
+    width: 100%;
+  }
+}
+
+
+/* Section 3 */
+
+
+#about-section-3{
+  background-image: url("../../JalAssets//jal_bg_img_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%; 
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+
+#about-section-3-div-1-p-1{
+  font-family: var(--font2);
+font-size: 16px;
+font-weight: 600;
+text-align: center;
+color: var(--color1);
+}
+
+
+
+/* Section 4 */
+
+
+#about-section-4{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#about-section-4-div-1{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-items: center;
+}
+
+#about-section-4-div-1-card-1{
+  margin-top: 20px;
+  padding: 20px;
+  width: 240px;
+  background-color: var(--color1);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(181,181,181,1);
+-moz-box-shadow: 0px 0px 10px 0px rgba(181,181,181,1);
+box-shadow: 0px 0px 10px 0px rgba(181,181,181,1);
+}
+
+#about-section-4-div-1-card-1-div-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-section-4-div-1-card-1-div-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#about-section-4-div-1-card-1-div-2-p-1{
+  font-family: var(--font2);
+font-size: 13px;
+font-weight: 600;
+color: var(--color5);
+text-align: center;
+}
+
+#about-section-4-div-1-card-1-div-3-p-1{
+  font-family: var(--font1);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;  
+  color: var(--color);
+}
+
+@media(max-width: 1438px){
+  #about-section-4-div-1{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media(max-width: 995px){
+  #about-section-4-div-1{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media(max-width: 515px){
+  #about-section-4-div-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

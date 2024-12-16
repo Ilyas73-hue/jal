@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --primary-color: #00C7A2;
+    --color: #202020;
+    --color1: #FFFFFF;
+  --color2: #FDC800;
+  --color3: #FCFCFC;
+  --color4: #B1B1B1;
+  --color5: #002147;
+    --font1: "Cabin", sans-serif;
+    --font2: "Bitter", serif;
+    --font3: "Outfit", sans-serif;
+    --font4: "Raleway", sans-serif;
+    --font5: "Inter", sans-serif;
+}
+
+
+#admission{
+    padding-top: 10vh;
+}
+
+@media(max-width: 1439px){
+  #admission{
+    padding-top: 16vh;
+}
+}
+
+@media(max-width: 1025px){
+  #admission{
+    padding-top: 11.5vh;
+}
+}
+
+
+@media(max-width: 769px){
+  #admission{
+    padding-top: 14.5vh;
+  }
+}
+
+
+/* Section 1 */
+
+
+#admission-section-1{
+  background-image: url("../../JalAssets//jal_bg_img_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%; 
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+#admission-section-1-div-1-p-1{
+  font-family: var(--font1);
+font-size: 32px;
+font-weight: 700;
+text-align: center;
+color: var(--color1);
+}
+
+#admission-section-1-div-1-p-2{
+  font-family: var(--font1);
+font-size: 24px;
+font-weight: 700;
+text-align: center;
+color: var(--color1);
+}
+
+
+/* Section 2 */
+
+#admission-section-2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#admission-section-2-div-1-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#admission-section-2-div-1-1-p-1{
+    font-family: var(--font1);
+font-size: 24px;
+font-weight: 600;
+color: var(--color5);
+}
+
+
+#admission-section-2-div-1-2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#admission-section-2-div-1-2-form-1{
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+#admission-section-2-div-1-2-form-1-1-p-1{
+    font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--color4);
+}
+
+#admission-section-2-div-1-2-form-1-1-input-1{
+    width: 440px;
+    padding: 5px;
+    font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--primary-color);
+}
+
+
+
+#admission-section-2-div-1-2-form-1-2-p-1{
+    font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--color4);
+}
+
+#admission-section-2-div-1-2-form-1-2-input-1{
+    width: 440px;
+    padding: 5px;
+    font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--primary-color);
+}
+
+/*  */
+
+
+#admission-section-2-div-1-2-form-2-1{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 440px;
+}
+
+
+
+#admission-section-2-div-1-2-form-2-1-1-p-1{
+  font-family: var(--font1);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color4);
+}
+
+
+#admission-section-2-div-1-2-form-2-1-1-input-1{
+  padding: 5px;
+  font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--primary-color);
+}
+
+#admission-section-2-div-1-2-form-2-1-2-p-1{
+  font-family: var(--font1);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color4);
+}
+
+
+#admission-section-2-div-1-2-form-2-1-2-input-1{
+  padding: 5px;
+  font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--primary-color);
+}
+
+
+
+#admission-section-2-div-1-2-form-2{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+#admission-section-2-div-1-2-form-2-1{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 440px; 
+}
+
+#admission-section-2-div-1-2-form-2-1-1-input-1{
+  width: 200px;
+}
+
+#admission-section-2-div-1-2-form-2-1-2-input-1{
+  width: 220px;
+}
+
+#admission-section-2-div-1-2-form-2-2{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 440px;
+}
+
+
+
+#admission-section-2-div-1-2-form-2-3-1-p-1{
+  font-family: var(--font1);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color4);
+}
+
+#admission-section-2-div-1-2-form-2-3-1-input-1{
+  padding: 5px;
+  font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--primary-color);
+width: 910px;
+height: 120px;
+}
+
+#admission-section-2-div-1-2-form-2-4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#admission-section-2-div-1-2-form-2-4-1{
+  margin-top: 20px;
+  width: 910px;
+
+}
+
+
+#admission-section-2-div-1-2-form-2-4-1-button{
+  width: 100%;
+  background-color: var(--primary-color);
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: var(--font1);
+font-size: 16px;
+font-weight: 600;
+color: var(--color1);
+}
+
+
+
+@media(min-width: 767px) and (max-width: 1921px){
+  #admission-section-2-div-1-2-form-2-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+
+@media(max-width: 960px){
+
+  #admission-section-2-div-1-2-form-1-1-input-1{
+    width: 300px;
+    padding: 5px;
+    font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--primary-color);
+}
+
+
+
+  #admission-section-2-div-1-2-form-1-2-input-1{
+    width: 300px;
+    padding: 5px;
+    font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--primary-color);
+}
+
+#admission-section-2-div-1-2-form-2-1{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px; 
+}
+
+#admission-section-2-div-1-2-form-2-2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+
+#admission-section-2-div-1-2-form-2-1-1-input-1{
+  width: 300px;
+}
+
+#admission-section-2-div-1-2-form-2-1-2-input-1{
+  width: 300px;
+}
+
+#admission-section-2-div-1-2-form-2-3-1-input-1{
+  padding: 5px;
+  font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--primary-color);
+width: 630px;
+height: 120px;
+}
+
+#admission-section-2-div-1-2-form-2-4-1{
+  margin-top: 20px;
+  width: 630px;
+
+}
+
+}
+
+
+@media(max-width: 740px){
+   #admission-section-2-div-1-2-form-1{
+    display: flex;
+    flex-direction: column;
+   }
+
+   #admission-section-2-div-1-2-form-1-1-input-1{
+    width: 100%;
+    padding: 5px;
+    font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--primary-color);
+}
+
+  #admission-section-2-div-1-2-form-1-2-input-1{
+    width: 100%;
+    padding: 5px;
+    font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--primary-color);
+}
+
+#admission-section-2-div-1-2-form-2{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#admission-section-2-div-1-2-form-2-1{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%; 
+}
+
+#admission-section-2-div-1-2-form-2-2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+#admission-section-2-div-1-2-form-2-1-1-input-1{
+  width: 100%; 
+}
+
+#admission-section-2-div-1-2-form-2-1-2-input-1{
+  width: 100%; 
+}
+
+#admission-section-2-div-1-2-form-2-3{
+  width: 100%;
+  display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+
+#admission-section-2-div-1-2-form-2-3-1-input-1{
+  padding: 5px;
+  font-family: var(--font1);
+font-size: 16px;
+font-weight: 400;
+color: var(--primary-color);
+width: 100%;
+height: 120px;
+}
+
+#admission-section-2-div-1-2-form-2-4-1{
+  margin-top: 20px;
+  width: 100%;
+
+}
+}
+
