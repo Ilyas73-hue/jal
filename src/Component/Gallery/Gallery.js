@@ -1,14 +1,34 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "./Gallery.css";
 import gallery_img_1 from "../../JalAssets/gallery_img_1.png";
+import gallery_img_2 from "../../JalAssets/gallery_img_2.png";
+import gallery_img_3 from "../../JalAssets/gallery_img_3.png";
+import gallery_img_4 from "../../JalAssets/gallery_img_4.png";
+import gallery_img_5 from "../../JalAssets/gallery_img_5.png";
+import gallery_img_6 from "../../JalAssets/gallery_img_6.png";
+import gallery_img_8 from "../../JalAssets/gallery_img_8.png";
 import testrimonial_img_1 from "../../JalAssets/testimonial_card_img_1.png";
 import testrimonial_img_2 from "../../JalAssets/testimonial_card_img_2.png";
 import testrimonial_img_3 from "../../JalAssets/testimonial_card_img_3.png";
 import testrimonial_img_4 from "../../JalAssets/testimonial_card_img_4.png";
 import { FaStar } from "react-icons/fa6";
 import testrimonial_logo from "../../JalAssets/testimonial_logo.png";
+import { motion } from "framer-motion";
+import { fadeBigIn, fadeSmallIn } from "./../../variants";
+
+
 
 function Gallery() {
+
+    const [matches, setMatches] = useState(
+      window.matchMedia("(max-width: 769px)").matches
+    )
+  
+    useEffect(() => {
+      window
+      .matchMedia("(max-width: 769px)")
+      .addEventListener('change', e => setMatches( e.matches ));
+    }, []);
 
     const testrimonial_data = [{
         id: 1, 
@@ -43,8 +63,18 @@ function Gallery() {
        
          <section id="gallery-section-1">
         <div className='container' id="gallery-section-1-div-1">
-          <p id="gallery-section-1-div-1-p-1">JAL NEET Academy</p>
-          <p id="gallery-section-1-div-1-p-2">Gallery</p>
+          <motion.p
+          variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+                              initial="hidden"
+                              whileInView={'show'}
+                              viewport={{ once: false, amount: 0.7 }}
+          id="gallery-section-1-div-1-p-1">JAL NEET Academy</motion.p>
+          <motion.p
+          variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+                              initial="hidden"
+                              whileInView={'show'}
+                              viewport={{ once: false, amount: 0.7 }}
+          id="gallery-section-1-div-1-p-2">Gallery</motion.p>
         </div>
       </section>
 
@@ -57,14 +87,54 @@ function Gallery() {
           <button id="gallery-section-2-div-1-1-button-2">ACHIEVERS</button>
           </div>
           <div id="gallery-section-2-div-1-2">
-           <img id="gallery-section-2-div-1-2-img" src={gallery_img_1} alt={gallery_img_1} />
-           <img id="gallery-section-2-div-1-2-img" src={gallery_img_1} alt={gallery_img_1} />
-           <img id="gallery-section-2-div-1-2-img" src={gallery_img_1} alt={gallery_img_1} />
-           <img id="gallery-section-2-div-1-2-img" src={gallery_img_1} alt={gallery_img_1} />
-           <img id="gallery-section-2-div-1-2-img" src={gallery_img_1} alt={gallery_img_1} />
-           <img id="gallery-section-2-div-1-2-img" src={gallery_img_1} alt={gallery_img_1} />
-           <img id="gallery-section-2-div-1-2-img" src={gallery_img_1} alt={gallery_img_1} />
-           <img id="gallery-section-2-div-1-2-img" src={gallery_img_1} alt={gallery_img_1} />
+           <motion.img
+           variants={matches ? fadeSmallIn("right") :fadeBigIn("right")}
+                               initial="hidden"
+                               whileInView={'show'}
+                               viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_1} alt={gallery_img_1} />
+           <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_2} alt={gallery_img_2} />
+           <motion.img
+            variants={matches ? fadeSmallIn("right") :fadeBigIn("right")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_3} alt={gallery_img_3} />
+           <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_4} alt={gallery_img_4} />
+           <motion.img
+            variants={matches ? fadeSmallIn("right") :fadeBigIn("right")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_5} alt={gallery_img_5} />
+           <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_6} alt={gallery_img_6} />
+           <motion.img
+            variants={matches ? fadeSmallIn("right") :fadeBigIn("right")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_5} alt={gallery_img_5} />
+           <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_8} alt={gallery_img_8} />
           </div>
           </div>
       </section>
@@ -77,14 +147,29 @@ function Gallery() {
 <section id="why_choose_us-section-5">
    <div className='container' id="why_choose_us-section-5-div-1">
     <div id="why_choose_us-section-5-div-1-1">
-     <p id="why_choose_us-section-5-div-1-1-p-1">Testimonials</p>
-     <p id="why_choose_us-section-5-div-1-1-p-2">What Student Says</p>
+     <motion.p
+      variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+      initial="hidden"
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.7 }}
+     id="why_choose_us-section-5-div-1-1-p-1">Testimonials</motion.p>
+     <motion.p
+      variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+      initial="hidden"
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.7 }}
+     id="why_choose_us-section-5-div-1-1-p-2">What Student Says</motion.p>
     </div>
     <div id="why_choose_us-section-5-div-1-2">
       <div id="why_choose_us-section-5-div-1-2-1">
 {
   testrimonial_data.map((item) => (
-<div id="why_choose_us-section-5-div-1-2-1-card-1">
+<motion.div
+ variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+ initial="hidden"
+ whileInView={'show'}
+ viewport={{ once: false, amount: 0.7 }}
+id="why_choose_us-section-5-div-1-2-1-card-1">
               <div id="why_choose_us-section-5-div-1-2-1-card-1-1">
                  <img id="why_choose_us-section-5-div-1-2-1-card-1-1-img" src={testrimonial_logo} alt={testrimonial_logo} />
               </div>
@@ -105,7 +190,7 @@ function Gallery() {
               <div id="why_choose_us-section-5-div-1-2-1-card-1-5">
                 <p id="why_choose_us-section-5-div-1-2-1-card-1-5-p-1"> {item.description}</p>
               </div>
-         </div>
+         </motion.div>
   ))
 }
          

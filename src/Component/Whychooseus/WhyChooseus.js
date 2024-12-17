@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "./Whychooseus.css";
 import home_card_logo_1 from "../../JalAssets/card_logo_1.png";
 import home_card_logo_2 from "../../JalAssets/card_logo_2.png";
@@ -15,9 +15,22 @@ import testrimonial_img_2 from "../../JalAssets/testimonial_card_img_2.png";
 import testrimonial_img_3 from "../../JalAssets/testimonial_card_img_3.png";
 import testrimonial_img_4 from "../../JalAssets/testimonial_card_img_4.png";
 import { FaStar } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import { fadeBigIn, fadeSmallIn } from "./../../variants";
 
 
 function WhyChooseus() {
+
+
+      const [matches, setMatches] = useState(
+        window.matchMedia("(max-width: 769px)").matches
+      )
+    
+      useEffect(() => {
+        window
+        .matchMedia("(max-width: 769px)")
+        .addEventListener('change', e => setMatches( e.matches ));
+      }, []);
 
     const why_card_data =[{
         id: 1,
@@ -121,8 +134,18 @@ function WhyChooseus() {
         
         <section id="why_choose_us-section-1">
         <div className='container' id="why_choose_us-section-1-div-1">
-          <p id="why_choose_us-section-1-div-1-p-1">JAL NEET Academy</p>
-          <p id="why_choose_us-section-1-div-1-p-2">Why Choose us</p>
+          <motion.p
+           variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+                              initial="hidden"
+                              whileInView={'show'}
+                              viewport={{ once: false, amount: 0.7 }}
+          id="why_choose_us-section-1-div-1-p-1">JAL NEET Academy</motion.p>
+          <motion.p
+           variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+                              initial="hidden"
+                              whileInView={'show'}
+                              viewport={{ once: false, amount: 0.7 }}
+          id="why_choose_us-section-1-div-1-p-2">Why Choose us</motion.p>
         </div>
       </section>
 
@@ -130,14 +153,23 @@ function WhyChooseus() {
      
       <section id="why_choose_us-section-2">
       <div className='container' id="why_choose_us-section-2-div-1"> 
-       <div id="why_choose_us-section-2-div-1-1">
+       <motion.div
+        variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+                           initial="hidden"
+                           whileInView={'show'}
+                           viewport={{ once: false, amount: 0.7 }}id="why_choose_us-section-2-div-1-1">
         <p id="why_choose_us-section-2-div-1-1-p-1">Why JAL NEET Academy</p>
         <div id="why_choose_us-section-2-div-1-1-line"></div>
-       </div>
+       </motion.div>
        <div id="why_choose_us-section-2-div-1-2">
         {
           why_card_data.map((item) => (
-            <div id="why_choose_us-section-2-div-1-2-card">
+            <motion.div
+             variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+                                initial="hidden"
+                                whileInView={'show'}
+                                viewport={{ once: false, amount: 0.7 }}
+            id="why_choose_us-section-2-div-1-2-card">
             <div id="why_choose_us-section-2-div-1-2-card-1">
               <img id="why_choose_us-section-2-div-1-2-card-1-img" src={item.img} alt={item.img} />
             </div>
@@ -147,7 +179,7 @@ function WhyChooseus() {
             <div id="why_choose_us-section-2-div-1-2-card-3">
             <p id="why_choose_us-section-2-div-1-2-card-3-p-1">{item.description}</p>
             </div>
-         </div>
+         </motion.div>
           ))
         }
       
@@ -159,12 +191,22 @@ function WhyChooseus() {
 
 <section id="why_choose_us-section-3">
    <div className='container' id="why_choose_us-section-3-div-1"> 
-      <div  id="why_choose_us-section-3-div-1-1">
+      <motion.div
+       variants={matches ? fadeSmallIn("right") :fadeBigIn("right")}
+                          initial="hidden"
+                          whileInView={'show'}
+                          viewport={{ once: false, amount: 0.7 }}
+      id="why_choose_us-section-3-div-1-1">
         <p id="why_choose_us-section-3-div-1-1-p-1">Empowering Minds, Changing Lives Shapping Futures</p>
         <p id="why_choose_us-section-3-div-1-1-p-2">If you're looking for the Best NEET coaching academy that offers top-tier education, consistent results, and unwavering support, Jal Neet Academy is your answer. Join us today and take the first step toward making your medical dreams a reality. </p>
-      </div>
+      </motion.div>
       <div id="why_choose_us-section-3-div-1-2">
-        <div id="why_choose_us-section-3-div-1-2-1">
+        <motion.div
+         variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+                            initial="hidden"
+                            whileInView={'show'}
+                            viewport={{ once: false, amount: 0.7 }}
+        id="why_choose_us-section-3-div-1-2-1">
           <h6 id="why_choose_us-section-3-div-1-2-1-h6-1">
           Enquiry Now 
           </h6>
@@ -183,7 +225,7 @@ function WhyChooseus() {
               <button id="why_choose_us-section-3-div-1-2-1-form-1-div-4-button">Submit</button>
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
    </div>
 </section>
@@ -193,7 +235,12 @@ function WhyChooseus() {
 <section id="why_choose_us-section-4">
 <div className='container' id="why_choose_us-section-4-div-1">
 <div id="why_choose_us-section-4-div-1-1">
-  <div id="why_choose_us-section-4-div-1-1-1">
+  <motion.div
+   variants={matches ? fadeSmallIn("right") :fadeBigIn("right")}
+    initial="hidden"
+    whileInView={'show'}
+    viewport={{ once: false, amount: 0.7 }}
+  id="why_choose_us-section-4-div-1-1-1">
    <div id="why_choose_us-section-4-div-1-1-1-1">
     <p id="why_choose_us-section-4-div-1-1-1-1-p-1">Our Mission</p>
     <div id="why_choose_us-section-4-div-1-1-1-1-line"></div>
@@ -214,18 +261,33 @@ function WhyChooseus() {
 }
 
    </div>
-  </div>
+  </motion.div>
 
-  <div id="why_choose_us-section-4-div-1-1-2">
+  <motion.div
+    variants={!matches && fadeBigIn("left")}
+    initial="hidden"
+    whileInView={'show'}
+    viewport={{ once: false, amount: 0.7 }}
+  id="why_choose_us-section-4-div-1-1-2">
     <img  id="why_choose_us-section-4-div-1-1-2-img" src={mission} alt={mission} />
-  </div>
+  </motion.div>
 </div>
 
 <div id="why_choose_us-section-4-div-1-2">
-  <div id="why_choose_us-section-4-div-1-2-1">
+  <motion.div
+  variants={!matches && fadeBigIn("right")}
+    initial="hidden"
+    whileInView={'show'}
+    viewport={{ once: false, amount: 0.7 }}
+  id="why_choose_us-section-4-div-1-2-1">
   <img id="why_choose_us-section-4-div-1-2-1-img" src={vision} alt={vision} />
-  </div>
-  <div id="why_choose_us-section-4-div-1-2-2">
+  </motion.div>
+  <motion.div
+    variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+    initial="hidden"
+    whileInView={'show'}
+    viewport={{ once: false, amount: 0.7 }}
+  id="why_choose_us-section-4-div-1-2-2">
   <div id="why_choose_us-section-4-div-1-2-2-1">
     <p id="why_choose_us-section-4-div-1-2-2-1-p-1">Our Vision</p>
     <div id="why_choose_us-section-4-div-1-2-2-1-line"></div>
@@ -246,7 +308,7 @@ function WhyChooseus() {
 }
 
    </div>
-  </div>
+  </motion.div>
 </div>
 </div>
 </section>
@@ -258,15 +320,25 @@ function WhyChooseus() {
 
 <section id="why_choose_us-section-5">
    <div className='container' id="why_choose_us-section-5-div-1">
-    <div id="why_choose_us-section-5-div-1-1">
+    <motion.div
+        variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+         initial="hidden"
+         whileInView={'show'}
+         viewport={{ once: false, amount: 0.7 }}
+     id="why_choose_us-section-5-div-1-1">
      <p id="why_choose_us-section-5-div-1-1-p-1">Testimonials</p>
      <p id="why_choose_us-section-5-div-1-1-p-2">What Student Says</p>
-    </div>
+    </motion.div>
     <div id="why_choose_us-section-5-div-1-2">
       <div id="why_choose_us-section-5-div-1-2-1">
 {
   testrimonial_data.map((item) => (
-<div id="why_choose_us-section-5-div-1-2-1-card-1">
+<motion.div
+variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+initial="hidden"
+whileInView={'show'}
+viewport={{ once: false, amount: 0.7 }}
+id="why_choose_us-section-5-div-1-2-1-card-1">
               <div id="why_choose_us-section-5-div-1-2-1-card-1-1">
                  <img id="why_choose_us-section-5-div-1-2-1-card-1-1-img" src={testrimonial_logo} alt={testrimonial_logo} />
               </div>
@@ -287,7 +359,7 @@ function WhyChooseus() {
               <div id="why_choose_us-section-5-div-1-2-1-card-1-5">
                 <p id="why_choose_us-section-5-div-1-2-1-card-1-5-p-1"> {item.description}</p>
               </div>
-         </div>
+         </motion.div>
   ))
 }
          

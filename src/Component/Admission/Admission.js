@@ -1,8 +1,23 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "./Admission.css";
+import { motion } from "framer-motion";
+import { fadeBigIn, fadeSmallIn } from "./../../variants";
 
 
 function Admission() {
+
+
+    const [matches, setMatches] = useState(
+      window.matchMedia("(max-width: 769px)").matches
+    )
+  
+    useEffect(() => {
+      window
+      .matchMedia("(max-width: 769px)")
+      .addEventListener('change', e => setMatches( e.matches ));
+    }, []);
+  
+
   return (
     <div id="admission">
       
@@ -10,8 +25,18 @@ function Admission() {
         
         <section id="admission-section-1">
         <div className='container' id="admission-section-1-div-1">
-          <p id="admission-section-1-div-1-p-1">JAL NEET Academy</p>
-          <p id="admission-section-1-div-1-p-2">Admission</p>
+        <motion.p 
+        variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+                    initial="hidden"
+                    whileInView={'show'}
+                    viewport={{ once: false, amount: 0.7 }}
+        id="admission-section-1-div-1-p-1">JAL NEET Academy</motion.p>
+          <motion.p
+          variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+                      initial="hidden"
+                      whileInView={'show'}
+                      viewport={{ once: false, amount: 0.7 }}
+          id="admission-section-1-div-1-p-2">Admission</motion.p>
         </div>
       </section>
 
@@ -19,7 +44,12 @@ function Admission() {
      <section id="admission-section-2">
      <div className='container' id="admission-section-2-div-1">
       <div id='admission-section-2-div-1-1'>
-        <p id='admission-section-2-div-1-1-p-1'>Registration Form</p>
+        <motion.p
+          variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+          initial="hidden"
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.7 }}
+        id='admission-section-2-div-1-1-p-1'>Registration Form</motion.p>
       </div>
       <div id="admission-section-2-div-1-2">
       <form id="admission-section-2-div-1-2-form">

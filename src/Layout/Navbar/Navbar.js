@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Navbar.css";
 import Marquee from "react-fast-marquee";
+import logo from "../../JalAssets/jal_logo.png";
 
 function Navbar() {
   return (
@@ -16,7 +17,7 @@ function Navbar() {
      
       <nav class="navbar navbar-expand-lg" id="navbar-2">
   <div class="container">
-    <a class="navbar-brand" href="#">Logo</a>
+    <a class="navbar-brand" href="#"><img id="navbar-brand-logo" src={logo} alt={logo} /></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

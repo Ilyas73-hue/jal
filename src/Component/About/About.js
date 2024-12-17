@@ -103,50 +103,34 @@ function About() {
             viewport={{ once: false, amount: 0.7 }}
          id="about-section-2-div-1-1-img" src={home_about_slide} alt={home_about_slide} />
        </div>
-       <div
-       id="about-section-2-div-1-2">
-        <motion.div
-             variants={matches ? fadeBigIn("up") :fadeBigIn("left")}
-                  initial="hidden"
-                  whileInView={'show'}
-                  viewport={{ once: false, amount: 0.7 }}
-        id="about-section-2-div-1-2-1">
-         <p id="about-section-2-div-1-2-1-p-1">About Us</p>
-         <div id="about-section-2-div-1-2-1-line"></div>
-        </motion.div>
-        <motion.div
-             variants={matches ? fadeBigIn("up") :fadeBigIn("left")}
-             initial="hidden"
-             whileInView={'show'}
-             viewport={{ once: false, amount: 0.7 }}
-        id="about-section-2-div-1-2-2">
-        <p id="about-section-2-div-1-2-2-p-1">The Best NEET Academy for Aspiring Medical Students</p>
-        </motion.div>
-        <motion.div
-              variants={matches ? fadeBigIn("up") :fadeBigIn("left")}
+       <motion.div
+              variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
+       id="about-section-2-div-1-2">
+        <motion id="about-section-2-div-1-2-1">
+         <p id="about-section-2-div-1-2-1-p-1">About Us</p>
+         <div id="about-section-2-div-1-2-1-line"></div>
+        </motion>
+        <div
+        id="about-section-2-div-1-2-2">
+        <p id="about-section-2-div-1-2-2-p-1">The Best NEET Academy for Aspiring Medical Students</p>
+        </div>
+        <div
+             
         id="about-section-2-div-1-2-3">
         <p id="about-section-2-div-1-2-3-p-1">At Jal Neet Academy, we are deeply committed to shaping the future of aspiring medical professionals by providing exceptional education, innovative teaching, and personalized guidance. As one of the Best NEET coaching academies in the country, we have a legacy of producing successful medical aspirants who are now on their journey to becoming doctors. Our approach is focused on empowering students with the knowledge and skills they need to excel in the highly competitive NEET exams and fulfill their dreams of a career in medicine.</p>
-        </motion.div>
-        <motion.div
-             variants={matches ? fadeBigIn("up") :fadeBigIn("left")}
-             initial="hidden"
-             whileInView={'show'}
-             viewport={{ once: false, amount: 0.7 }}
+        </div>
+        <div
         id="about-section-2-div-1-2-4">
         <p id="about-section-2-div-1-2-4-p-1">Our teaching team consists of highly qualified, experienced educators who are experts in their respective fields, ensuring students receive the best possible instruction. These dedicated professionals are not just teachers but mentors who guide students every step of the way, helping them overcome academic challenges and pushing them toward success.</p>
-        </motion.div>
-        <motion.div
-             variants={matches ? fadeBigIn("up") :fadeBigIn("left")}
-             initial="hidden"
-             whileInView={'show'}
-             viewport={{ once: false, amount: 0.7 }}
+        </div>
+        <div
         id="about-section-2-div-1-2-5">
          <button id="about-section-2-div-1-2-5-button">Read More</button>
-        </motion.div>
-       </div>
+        </div>
+       </motion.div>
     </div>
 </section>
 
