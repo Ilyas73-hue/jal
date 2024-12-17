@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "./About.css";
 import home_about_slide from "../../JalAssets/home_about_slide_img_1.png";
 import about_card_logo_1 from "../../JalAssets/about_card_logo_1.png";
@@ -9,8 +9,22 @@ import about_card_logo_5 from "../../JalAssets/about_card_logo_5.png";
 import about_card_logo_6 from "../../JalAssets/about_card_logo_6.png";
 import about_card_logo_7 from "../../JalAssets/about_card_logo_7.png";
 import about_card_logo_8 from "../../JalAssets/about_card_logo_8.png";
+import { motion } from "framer-motion";
+import { fadeBigIn, fadeSmallIn } from "./../../variants";
+
+
 
 function About() {
+
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 769px)").matches
+  )
+
+  useEffect(() => {
+    window
+    .matchMedia("(max-width: 769px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+  }, []);
 
   const card_data =[{
     id: 1, 
@@ -59,9 +73,20 @@ function About() {
      {/* Section 1 */}
 
       <section id="about-section-1">
-        <div className='container' id="about-section-1-div-1">
-          <p id="about-section-1-div-1-p-1">JAL NEET Academy</p>
-          <p id="about-section-1-div-1-p-2">About Us</p>
+        <div
+        className='container' id="about-section-1-div-1">
+          <motion.p
+            variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+          id="about-section-1-div-1-p-1">JAL NEET Academy</motion.p>
+          <motion.p
+            variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+          id="about-section-1-div-1-p-2">About Us</motion.p>
         </div>
       </section>
 
@@ -69,26 +94,58 @@ function About() {
 
       <section id="about-section-2">
     <div className='container' id="about-section-2-div-1"> 
-       <div id="about-section-2-div-1-1">
-         <img id="about-section-2-div-1-1-img" src={home_about_slide} alt={home_about_slide} />
+       <div
+       id="about-section-2-div-1-1">
+         <motion.img
+            variants={!matches && fadeBigIn("right")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+         id="about-section-2-div-1-1-img" src={home_about_slide} alt={home_about_slide} />
        </div>
-       <div id="about-section-2-div-1-2">
-        <div id="about-section-2-div-1-2-1">
+       <div
+       id="about-section-2-div-1-2">
+        <motion.div
+             variants={matches ? fadeBigIn("up") :fadeBigIn("left")}
+                  initial="hidden"
+                  whileInView={'show'}
+                  viewport={{ once: false, amount: 0.7 }}
+        id="about-section-2-div-1-2-1">
          <p id="about-section-2-div-1-2-1-p-1">About Us</p>
          <div id="about-section-2-div-1-2-1-line"></div>
-        </div>
-        <div id="about-section-2-div-1-2-2">
+        </motion.div>
+        <motion.div
+             variants={matches ? fadeBigIn("up") :fadeBigIn("left")}
+             initial="hidden"
+             whileInView={'show'}
+             viewport={{ once: false, amount: 0.7 }}
+        id="about-section-2-div-1-2-2">
         <p id="about-section-2-div-1-2-2-p-1">The Best NEET Academy for Aspiring Medical Students</p>
-        </div>
-        <div id="about-section-2-div-1-2-3">
+        </motion.div>
+        <motion.div
+              variants={matches ? fadeBigIn("up") :fadeBigIn("left")}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.7 }}
+        id="about-section-2-div-1-2-3">
         <p id="about-section-2-div-1-2-3-p-1">At Jal Neet Academy, we are deeply committed to shaping the future of aspiring medical professionals by providing exceptional education, innovative teaching, and personalized guidance. As one of the Best NEET coaching academies in the country, we have a legacy of producing successful medical aspirants who are now on their journey to becoming doctors. Our approach is focused on empowering students with the knowledge and skills they need to excel in the highly competitive NEET exams and fulfill their dreams of a career in medicine.</p>
-        </div>
-        <div id="about-section-2-div-1-2-4">
+        </motion.div>
+        <motion.div
+             variants={matches ? fadeBigIn("up") :fadeBigIn("left")}
+             initial="hidden"
+             whileInView={'show'}
+             viewport={{ once: false, amount: 0.7 }}
+        id="about-section-2-div-1-2-4">
         <p id="about-section-2-div-1-2-4-p-1">Our teaching team consists of highly qualified, experienced educators who are experts in their respective fields, ensuring students receive the best possible instruction. These dedicated professionals are not just teachers but mentors who guide students every step of the way, helping them overcome academic challenges and pushing them toward success.</p>
-        </div>
-        <div id="about-section-2-div-1-2-5">
+        </motion.div>
+        <motion.div
+             variants={matches ? fadeBigIn("up") :fadeBigIn("left")}
+             initial="hidden"
+             whileInView={'show'}
+             viewport={{ once: false, amount: 0.7 }}
+        id="about-section-2-div-1-2-5">
          <button id="about-section-2-div-1-2-5-button">Read More</button>
-        </div>
+        </motion.div>
        </div>
     </div>
 </section>
@@ -96,9 +153,14 @@ function About() {
    {/* Section 3 */}
 
    <section id="about-section-3">
-   <div className='container' id="about-section-3-div-1">
+   <motion.div
+   variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+        initial="hidden"
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.7 }}
+   className='container' id="about-section-3-div-1">
      <p id="about-section-3-div-1-p-1">Join Jal Neet Academy today, and let’s work together to turn your aspirations into reality. Your journey to becoming a medical professional starts here!</p>
-   </div>
+   </motion.div>
    </section>
 
    {/* Section 4 */}
@@ -107,7 +169,12 @@ function About() {
      <div className='container' id="about-section-4-div-1">
       {
         card_data.map((item) => (
-          <div id="about-section-4-div-1-card-1">
+          <motion.div
+          variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+               initial="hidden"
+               whileInView={'show'}
+               viewport={{ once: false, amount: 0.7 }}
+          id="about-section-4-div-1-card-1">
           <div id="about-section-4-div-1-card-1-div-1">
            <img id="about-section-4-div-1-card-1-div-1-img" src={item.img} alt={item.img} />
           </div>
@@ -117,7 +184,7 @@ function About() {
           <div id="about-section-4-div-1-card-1-div-3">
            <p id="about-section-4-div-1-card-1-div-3-p-1">{item.description}</p>
           </div>
-        </div>
+        </motion.div>
         ))
       }
  

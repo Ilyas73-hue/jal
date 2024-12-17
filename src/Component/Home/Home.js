@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "./Home.css";
 import home_carousel_img_1 from "../../JalAssets/home_carosel_img_1.jpeg";
 import home_carousel_img_2 from "../../JalAssets/home_carosel_img_2.jpeg";
@@ -21,8 +21,20 @@ import testrimonial_img_2 from "../../JalAssets/testimonial_card_img_2.png";
 import testrimonial_img_3 from "../../JalAssets/testimonial_card_img_3.png";
 import testrimonial_img_4 from "../../JalAssets/testimonial_card_img_4.png";
 import { FaStar } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import { fadeBigIn, fadeSmallIn } from "./../../variants";
 
 function Home() {
+
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 769px)").matches
+  )
+
+  useEffect(() => {
+    window
+    .matchMedia("(max-width: 769px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+  }, []);
 
     const why_card_data =[{
       id: 1,
@@ -139,12 +151,17 @@ function Home() {
     </div>
    </div>
    <div id="carousel-content">
-     <div id="carousel-content-1">
+     <motion.div
+     variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+     initial="hidden"
+     whileInView={'show'}
+     viewport={{ once: false, amount: 0.7 }}
+     id="carousel-content-1">
            <h6 id="carousel-content-1-h6-1">Jal Neet Academy</h6>
            <h6 id="carousel-content-1-h6-2">The Best NEET Academy for Aspiring 
            Medical Students</h6>
            <button id="carousel-content-1-button">Apply Now</button>
-     </div>
+     </motion.div>
    </div>
  
   </div>
@@ -164,10 +181,20 @@ function Home() {
 
 <section id="home-section-2">
     <div className='container' id="home-section-2-div-1"> 
-       <div id="home-section-2-div-1-1">
+       <motion.div
+       variants={!matches && fadeBigIn("right")}
+       initial="hidden"
+       whileInView={'show'}
+       viewport={{ once: false, amount: 0.7 }}
+       id="home-section-2-div-1-1">
          <img id="home-section-2-div-1-1-img" src={home_about_slide} alt={home_about_slide} />
-       </div>
-       <div id="home-section-2-div-1-2">
+       </motion.div>
+       <motion.div
+       variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+       initial="hidden"
+       whileInView={'show'}
+       viewport={{ once: false, amount: 0.7 }}
+       id="home-section-2-div-1-2">
         <div id="home-section-2-div-1-2-1">
          <p id="home-section-2-div-1-2-1-p-1">About Us</p>
          <div id="home-section-2-div-1-2-1-line"></div>
@@ -184,7 +211,7 @@ function Home() {
         <div id="home-section-2-div-1-2-5">
          <button id="home-section-2-div-1-2-5-button">Read More</button>
         </div>
-       </div>
+       </motion.div>
     </div>
 </section>
 
@@ -193,14 +220,24 @@ function Home() {
 
 <section id="home-section-3">
       <div className='container' id="home-section-3-div-1"> 
-       <div id="home-section-3-div-1-1">
+       <motion.div
+       variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+       initial="hidden"
+       whileInView={'show'}
+       viewport={{ once: false, amount: 0.7 }}
+       id="home-section-3-div-1-1">
         <p id="home-section-3-div-1-1-p-1">Why JAL NEET Academy</p>
         <div id="home-section-3-div-1-1-line"></div>
-       </div>
+       </motion.div>
        <div id="home-section-3-div-1-2">
         {
           why_card_data.map((item) => (
-            <div id="home-section-3-div-1-2-card">
+            <motion.div
+            variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+                initial="hidden"
+                whileInView={'show'}
+                viewport={{ once: false, amount: 0.7 }}
+            id="home-section-3-div-1-2-card">
             <div id="home-section-3-div-1-2-card-1">
               <img id="home-section-3-div-1-2-card-1-img" src={item.img} alt={item.img} />
             </div>
@@ -210,7 +247,7 @@ function Home() {
             <div id="home-section-3-div-1-2-card-3">
             <p id="home-section-3-div-1-2-card-3-p-1">{item.description}</p>
             </div>
-         </div>
+         </motion.div>
           ))
         }
       
@@ -222,12 +259,22 @@ function Home() {
 
 <section id="home-section-4">
    <div className='container' id="home-section-4-div-1"> 
-      <div  id="home-section-4-div-1-1">
+      <motion.div
+      variants={matches ? fadeSmallIn("right") :fadeBigIn("right")}
+      initial="hidden"
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.7 }}
+      id="home-section-4-div-1-1">
         <p id="home-section-4-div-1-1-p-1">Empowering Minds, Changing Lives Shapping Futures</p>
         <p id="home-section-4-div-1-1-p-2">If you're looking for the Best NEET coaching academy that offers top-tier education, consistent results, and unwavering support, Jal Neet Academy is your answer. Join us today and take the first step toward making your medical dreams a reality. </p>
-      </div>
+      </motion.div>
       <div id="home-section-4-div-1-2">
-        <div id="home-section-4-div-1-2-1">
+        <motion.div
+        variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+        initial="hidden"
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.7 }}
+        id="home-section-4-div-1-2-1">
           <h6 id="home-section-4-div-1-2-1-h6-1">
           Enquiry Now 
           </h6>
@@ -246,7 +293,7 @@ function Home() {
               <button id="home-section-4-div-1-2-1-form-1-div-4-button">Submit</button>
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
    </div>
 </section>
@@ -256,7 +303,12 @@ function Home() {
 <section id="home-section-5">
 <div className='container' id="home-section-5-div-1">
 <div id="home-section-5-div-1-1">
-  <div id="home-section-5-div-1-1-1">
+  <motion.div
+  variants={matches ? fadeSmallIn("right") :fadeBigIn("right")}
+  initial="hidden"
+  whileInView={'show'}
+  viewport={{ once: false, amount: 0.7 }}
+  id="home-section-5-div-1-1-1">
    <div id="home-section-5-div-1-1-1-1">
     <p id="home-section-5-div-1-1-1-1-p-1">Our Mission</p>
     <div id="home-section-5-div-1-1-1-1-line"></div>
@@ -277,18 +329,33 @@ function Home() {
 }
 
    </div>
-  </div>
+  </motion.div>
 
-  <div id="home-section-5-div-1-1-2">
+  <motion.div
+  variants={!matches && fadeBigIn("left")}
+  initial="hidden"
+  whileInView={'show'}
+  viewport={{ once: false, amount: 0.7 }}
+  id="home-section-5-div-1-1-2">
     <img  id="home-section-5-div-1-1-2-img" src={mission} alt={mission} />
-  </div>
+  </motion.div>
 </div>
 
 <div id="home-section-5-div-1-2">
-  <div id="home-section-5-div-1-2-1">
+  <motion.div
+  variants={!matches && fadeBigIn("right")}
+  initial="hidden"
+  whileInView={'show'}
+  viewport={{ once: false, amount: 0.7 }}
+  id="home-section-5-div-1-2-1">
   <img id="home-section-5-div-1-2-1-img" src={vision} alt={vision} />
-  </div>
-  <div id="home-section-5-div-1-2-2">
+  </motion.div>
+  <motion.div
+  variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+  initial="hidden"
+  whileInView={'show'}
+  viewport={{ once: false, amount: 0.7 }}
+  id="home-section-5-div-1-2-2">
   <div id="home-section-5-div-1-2-2-1">
     <p id="home-section-5-div-1-2-2-1-p-1">Our Vision</p>
     <div id="home-section-5-div-1-2-2-1-line"></div>
@@ -309,7 +376,7 @@ function Home() {
 }
 
    </div>
-  </div>
+  </motion.div>
 </div>
 </div>
 </section>
@@ -318,10 +385,20 @@ function Home() {
 {/* Section 6 */}
 <section id="home-section-6">
 <div className='container' id="home-section-6-div-1">
-  <p id="home-section-6-div-1-p-1">
+  <motion.p
+  variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+  initial="hidden"
+  whileInView={'show'}
+  viewport={{ once: false, amount: 0.7 }}
+  id="home-section-6-div-1-p-1">
   Your journey to success begins here! Let us help you shape a brighter, healthier future through NEET and beyond.
-  </p>
-  <button id="home-section-6-div-1-button">Admission</button>
+  </motion.p>
+  <motion.button
+  variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+  initial="hidden"
+  whileInView={'show'}
+  viewport={{ once: false, amount: 0.7 }}
+  id="home-section-6-div-1-button">Admission</motion.button>
 </div>
 </section>
 
@@ -329,15 +406,25 @@ function Home() {
 
 <section id="home-section-7">
    <div className='container' id="home-section-7-div-1">
-    <div id="home-section-7-div-1-1">
+    <motion.div
+    variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
+    initial="hidden"
+    whileInView={'show'}
+    viewport={{ once: false, amount: 0.7 }}
+    id="home-section-7-div-1-1">
      <p id="home-section-7-div-1-1-p-1">Testimonials</p>
      <p id="home-section-7-div-1-1-p-2">What Student Says</p>
-    </div>
+    </motion.div>
     <div id="home-section-7-div-1-2">
       <div id="home-section-7-div-1-2-1">
 {
   testrimonial_data.map((item) => (
-<div id="home-section-7-div-1-2-1-card-1">
+<motion.div
+variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
+initial="hidden"
+whileInView={'show'}
+viewport={{ once: false, amount: 0.7 }}
+id="home-section-7-div-1-2-1-card-1">
               <div id="home-section-7-div-1-2-1-card-1-1">
                  <img id="home-section-7-div-1-2-1-card-1-1-img" src={testrimonial_logo} alt={testrimonial_logo} />
               </div>
@@ -358,7 +445,7 @@ function Home() {
               <div id="home-section-7-div-1-2-1-card-1-5">
                 <p id="home-section-7-div-1-2-1-card-1-5-p-1"> {item.description}</p>
               </div>
-         </div>
+         </motion.div>
   ))
 }
          
