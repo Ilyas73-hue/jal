@@ -68,7 +68,7 @@ function Gallery() {
                               initial="hidden"
                               whileInView={'show'}
                               viewport={{ once: false, amount: 0.7 }}
-          id="gallery-section-1-div-1-p-1">JAL NEET Academy</motion.p>
+          id="gallery-section-1-div-1-p-1">JAL NEET ACADEMY</motion.p>
           <motion.p
           variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
                               initial="hidden"

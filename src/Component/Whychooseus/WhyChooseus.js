@@ -139,7 +139,7 @@ function WhyChooseus() {
                               initial="hidden"
                               whileInView={'show'}
                               viewport={{ once: false, amount: 0.7 }}
-          id="why_choose_us-section-1-div-1-p-1">JAL NEET Academy</motion.p>
+          id="why_choose_us-section-1-div-1-p-1">JAL NEET ACADEMY</motion.p>
           <motion.p
            variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
                               initial="hidden"
@@ -158,7 +158,7 @@ function WhyChooseus() {
                            initial="hidden"
                            whileInView={'show'}
                            viewport={{ once: false, amount: 0.7 }}id="why_choose_us-section-2-div-1-1">
-        <p id="why_choose_us-section-2-div-1-1-p-1">Why JAL NEET Academy</p>
+        <p id="why_choose_us-section-2-div-1-1-p-1">Why JAL NEET ACADEMY</p>
         <div id="why_choose_us-section-2-div-1-1-line"></div>
        </motion.div>
        <div id="why_choose_us-section-2-div-1-2">
@@ -198,7 +198,7 @@ function WhyChooseus() {
                           viewport={{ once: false, amount: 0.7 }}
       id="why_choose_us-section-3-div-1-1">
         <p id="why_choose_us-section-3-div-1-1-p-1">Empowering Minds, Changing Lives Shapping Futures</p>
-        <p id="why_choose_us-section-3-div-1-1-p-2">If you're looking for the Best NEET coaching academy that offers top-tier education, consistent results, and unwavering support, Jal Neet Academy is your answer. Join us today and take the first step toward making your medical dreams a reality. </p>
+        <p id="why_choose_us-section-3-div-1-1-p-2">If you're looking for the Best NEET coaching academy that offers top-tier education, consistent results, and unwavering support, JAL NEET ACADEMY is your answer. Join us today and take the first step toward making your medical dreams a reality. </p>
       </motion.div>
       <div id="why_choose_us-section-3-div-1-2">
         <motion.div

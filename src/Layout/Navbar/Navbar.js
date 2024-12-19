@@ -11,7 +11,7 @@ function Navbar() {
        direction='right'
        speed={60}
       >
-         <p id="navbar-1-p-1">Welcome to Jal Neet Academy – The Best NEET Academy for Aspiring Medical Students</p>
+         <p id="navbar-1-p-1">Welcome to JAL NEET ACADEMY – The Best NEET Academy for Aspiring Medical Students</p>
          </Marquee>
       </div>
      

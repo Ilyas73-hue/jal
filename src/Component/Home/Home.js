@@ -157,7 +157,7 @@ function Home() {
      whileInView={'show'}
      viewport={{ once: false, amount: 0.7 }}
      id="carousel-content-1">
-           <h6 id="carousel-content-1-h6-1">Jal Neet Academy</h6>
+           <h6 id="carousel-content-1-h6-1">JAL NEET ACADEMY</h6>
            <h6 id="carousel-content-1-h6-2">The Best NEET Academy for Aspiring 
            Medical Students</h6>
            <button id="carousel-content-1-button">Apply Now</button>
@@ -203,7 +203,7 @@ function Home() {
         <p id="home-section-2-div-1-2-2-p-1">The Best NEET Academy for Aspiring Medical Students</p>
         </div>
         <div id="home-section-2-div-1-2-3">
-        <p id="home-section-2-div-1-2-3-p-1">At Jal Neet Academy, we are deeply committed to shaping the future of aspiring medical professionals by providing exceptional education, innovative teaching, and personalized guidance. As one of the Best NEET coaching academies in the country, we have a legacy of producing successful medical aspirants who are now on their journey to becoming doctors. Our approach is focused on empowering students with the knowledge and skills they need to excel in the highly competitive NEET exams and fulfill their dreams of a career in medicine.</p>
+        <p id="home-section-2-div-1-2-3-p-1">At JAL NEET ACADEMY, we are deeply committed to shaping the future of aspiring medical professionals by providing exceptional education, innovative teaching, and personalized guidance. As one of the Best NEET coaching academies in the country, we have a legacy of producing successful medical aspirants who are now on their journey to becoming doctors. Our approach is focused on empowering students with the knowledge and skills they need to excel in the highly competitive NEET exams and fulfill their dreams of a career in medicine.</p>
         </div>
         <div id="home-section-2-div-1-2-4">
         <p id="home-section-2-div-1-2-4-p-1">Our teaching team consists of highly qualified, experienced educators who are experts in their respective fields, ensuring students receive the best possible instruction. These dedicated professionals are not just teachers but mentors who guide students every step of the way, helping them overcome academic challenges and pushing them toward success.</p>
@@ -226,7 +226,7 @@ function Home() {
        whileInView={'show'}
        viewport={{ once: false, amount: 0.7 }}
        id="home-section-3-div-1-1">
-        <p id="home-section-3-div-1-1-p-1">Why JAL NEET Academy</p>
+        <p id="home-section-3-div-1-1-p-1">Why JAL NEET ACADEMY</p>
         <div id="home-section-3-div-1-1-line"></div>
        </motion.div>
        <div id="home-section-3-div-1-2">
@@ -266,7 +266,7 @@ function Home() {
       viewport={{ once: false, amount: 0.7 }}
       id="home-section-4-div-1-1">
         <p id="home-section-4-div-1-1-p-1">Empowering Minds, Changing Lives Shapping Futures</p>
-        <p id="home-section-4-div-1-1-p-2">If you're looking for the Best NEET coaching academy that offers top-tier education, consistent results, and unwavering support, Jal Neet Academy is your answer. Join us today and take the first step toward making your medical dreams a reality. </p>
+        <p id="home-section-4-div-1-1-p-2">If you're looking for the Best NEET coaching academy that offers top-tier education, consistent results, and unwavering support, JAL NEET ACADEMY is your answer. Join us today and take the first step toward making your medical dreams a reality. </p>
       </motion.div>
       <div id="home-section-4-div-1-2">
         <motion.div

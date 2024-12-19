@@ -30,7 +30,7 @@ function About() {
     id: 1, 
     name: "Mission-Driven Approach",
     img: `${about_card_logo_1}`,
-    description: "At Jal Neet Academy, we are dedicated to helping aspiring medical professionals achieve their dreams through quality education and innovative teaching methods."
+    description: "At JAL NEET ACADEMY, we are dedicated to helping aspiring medical professionals achieve their dreams through quality education and innovative teaching methods."
   }, {
     id: 2, 
     name: "Recognized Excellence",
@@ -80,7 +80,7 @@ function About() {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-          id="about-section-1-div-1-p-1">JAL NEET Academy</motion.p>
+          id="about-section-1-div-1-p-1">JAL NEET ACADEMY</motion.p>
           <motion.p
             variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
             initial="hidden"
@@ -120,7 +120,7 @@ function About() {
         <div
              
         id="about-section-2-div-1-2-3">
-        <p id="about-section-2-div-1-2-3-p-1">At Jal Neet Academy, we are deeply committed to shaping the future of aspiring medical professionals by providing exceptional education, innovative teaching, and personalized guidance. As one of the Best NEET coaching academies in the country, we have a legacy of producing successful medical aspirants who are now on their journey to becoming doctors. Our approach is focused on empowering students with the knowledge and skills they need to excel in the highly competitive NEET exams and fulfill their dreams of a career in medicine.</p>
+        <p id="about-section-2-div-1-2-3-p-1">At JAL NEET ACADEMY, we are deeply committed to shaping the future of aspiring medical professionals by providing exceptional education, innovative teaching, and personalized guidance. As one of the Best NEET coaching academies in the country, we have a legacy of producing successful medical aspirants who are now on their journey to becoming doctors. Our approach is focused on empowering students with the knowledge and skills they need to excel in the highly competitive NEET exams and fulfill their dreams of a career in medicine.</p>
         </div>
         <div
         id="about-section-2-div-1-2-4">
@@ -143,7 +143,7 @@ function About() {
         whileInView={'show'}
         viewport={{ once: false, amount: 0.7 }}
    className='container' id="about-section-3-div-1">
-     <p id="about-section-3-div-1-p-1">Join Jal Neet Academy today, and let’s work together to turn your aspirations into reality. Your journey to becoming a medical professional starts here!</p>
+     <p id="about-section-3-div-1-p-1">Join JAL NEET ACADEMY today, and let’s work together to turn your aspirations into reality. Your journey to becoming a medical professional starts here!</p>
    </motion.div>
    </section>
 

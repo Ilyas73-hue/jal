@@ -20,7 +20,7 @@ function Footer() {
               </div>
               <div id="footer-1-section-1-div-1-2">
                <p id="footer-1-section-1-div-1-2-p-1">
-               At Jal Neet Academy, we are committed to providing the highest quality education to help students achieve their dream of becoming medical professionals. Recognized as one of the *Best NEET coaching academies*, we have successfully guided thousands of aspiring doctors toward their goals. Our innovative teaching methods, experienced faculty, and personalized approach make us the ideal choice for NEET preparation.
+               At JAL NEET ACADEMY, we are committed to providing the highest quality education to help students achieve their dream of becoming medical professionals. Recognized as one of the *Best NEET coaching academies*, we have successfully guided thousands of aspiring doctors toward their goals. Our innovative teaching methods, experienced faculty, and personalized approach make us the ideal choice for NEET preparation.
                </p>
               </div>
               <div id="footer-1-section-1-div-1-3">
@@ -104,7 +104,7 @@ function Footer() {
           </div>
           <div className='container' id="footer-1-section-3">
           <div id="footer-1-section-3-1">
-            <p id="footer-1-section-3-1-p-1">Copyright © 2024 <span id="footer-1-section-3-1-p-1-span">JAL NEET Academy</span>. All Rights Reserved.</p>
+            <p id="footer-1-section-3-1-p-1">Copyright © 2024 <span id="footer-1-section-3-1-p-1-span">JAL NEET ACADEMY</span>. All Rights Reserved.</p>
           </div>
           <div id="footer-1-section-3-2">
             <p id="footer-1-section-3-2-p-1">Developed by : <a id="footer-1-section-3-2-p-1-a" href="">Intwhizz</a></p>
