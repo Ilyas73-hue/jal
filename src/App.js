@@ -9,6 +9,7 @@ import WhyChooseus from "./Component/Whychooseus/WhyChooseus";
 import Admission from "./Component/Admission/Admission";
 import Contact from "./Component/Contact/Contact";
 import Gallery from "./Component/Gallery/Gallery";
+import Registration from "./Component/Registration/Registration";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
                 <Route exact path="/admission" component={Admission} />
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/gallery" component={Gallery} />
+                <Route exact path="/registration" component={Registration} />
               </Switch>
               <Footer />
             </Router>

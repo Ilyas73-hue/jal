@@ -49,7 +49,7 @@ function Admission() {
           initial="hidden"
           whileInView={'show'}
           viewport={{ once: false, amount: 0.7 }}
-        id='admission-section-2-div-1-1-p-1'>Registration Form</motion.p>
+        id='admission-section-2-div-1-1-p-1'>Admission Form</motion.p>
       </div>
       <div id="admission-section-2-div-1-2">
       <form id="admission-section-2-div-1-2-form">

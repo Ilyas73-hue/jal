@@ -33,6 +33,9 @@ function Navbar() {
           <a class="nav-link" id="nav-link" href="/admission">Admissions</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" id="nav-link" href="/registration">Registration</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" id="nav-link" href="/why_choose_us">Why Choose us</a>
         </li>
         <li class="nav-item">

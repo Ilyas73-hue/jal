@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import "./Home.css";
-import home_carousel_img_1 from "../../JalAssets/home_carosel_img_1.jpeg";
+import home_carousel_img_1 from "../../JalAssets/jal_bg.png";
 import home_carousel_img_2 from "../../JalAssets/home_carosel_img_2.jpeg";
 import home_carousel_img_3 from "../../JalAssets/home_carosel_img_3.jpeg";
 import { FaArrowRight } from "react-icons/fa";
