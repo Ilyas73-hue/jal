@@ -53,7 +53,7 @@ function Registration() {
                    </div>
                    <div id="registration-section-2-div-2-form-div-1">
                         <p id="registration-section-2-div-2-form-div-1-p-1">Date-Of-Birth</p>
-                        <input id="registration-section-2-div-2-form-div-1-input" type="text"  />
+                        <input id="registration-section-2-div-2-form-div-1-input" type="date"  />
                    </div>
                    <div id="registration-section-2-div-2-form-div-1">
                         <p id="registration-section-2-div-2-form-div-1-p-1">Gender</p>
@@ -65,20 +65,20 @@ function Registration() {
                    </div>
                    <div id="registration-section-2-div-2-form-div-1">
                         <p id="registration-section-2-div-2-form-div-1-p-1">Email Address</p>
-                        <input id="registration-section-2-div-2-form-div-1-input" type="text"  />
+                        <input id="registration-section-2-div-2-form-div-1-input" type="email"  />
                    </div>
                    <div id="registration-section-2-div-2-form-div-1">
                         <p id="registration-section-2-div-2-form-div-1-p-1">Phone Number</p>
-                        <input id="registration-section-2-div-2-form-div-1-input" type="text"  />
+                        <input id="registration-section-2-div-2-form-div-1-input" type="number"  />
                    </div>
                    <div id="registration-section-2-div-2-form-div-1">
                         <p id="registration-section-2-div-2-form-div-1-p-1">Alternate Phone Number</p>
-                        <input id="registration-section-2-div-2-form-div-1-input" type="text"  />
+                        <input id="registration-section-2-div-2-form-div-1-input" type="number"  />
                    </div>
                 </div>
                 <div id="registration-section-2-div-2-form-div-2">
                 <p id="registration-section-2-div-2-form-div-1-p-1">Address</p>
-                <textarea id="registration-section-2-div-2-form-div-2-input" type="text"  ></textarea>
+                <textarea id="registration-section-2-div-2-form-div-2-input" type="message"  ></textarea>
                 </div>
                 <div id="registration-section-2-div-2-form-div-3">
                 <div id="registration-section-2-div-2-form-div-1">
@@ -115,7 +115,7 @@ function Registration() {
                    </div>
                    <div id="registration-section-2-div-2-form-div-1">
                         <p id="registration-section-2-div-2-form-div-1-p-1">Contact Number</p>
-                        <input id="registration-section-2-div-2-form-div-1-input" type="text"  />
+                        <input id="registration-section-2-div-2-form-div-1-input" type="number"  />
                    </div>
                 </div>
                 <div id="registration-section-2-div-2-form-div-5">
