@@ -1,12 +1,23 @@
 import React, {useState, useEffect} from 'react';
 import "./Gallery.css";
-import gallery_img_1 from "../../JalAssets/gallery_img_1.png";
-import gallery_img_2 from "../../JalAssets/gallery_img_2.png";
-import gallery_img_3 from "../../JalAssets/gallery_img_3.png";
-import gallery_img_4 from "../../JalAssets/gallery_img_4.png";
-import gallery_img_5 from "../../JalAssets/gallery_img_5.png";
-import gallery_img_6 from "../../JalAssets/gallery_img_6.png";
-import gallery_img_8 from "../../JalAssets/gallery_img_8.png";
+import gallery_img_1 from "../../JalAssets/gallery_img_1.jpg";
+import gallery_img_2 from "../../JalAssets/gallery_img_2.jpg";
+import gallery_img_5 from "../../JalAssets/gallery_img_5.jpg";
+import gallery_img_6 from "../../JalAssets/gallery_img_6.jpg";
+import gallery_img_8 from "../../JalAssets/gallery_img_8.jpg";
+import gallery_img_9 from "../../JalAssets/gallery_img_9.jpg";
+import gallery_img_10 from "../../JalAssets/gallery_img_10.jpg";
+import gallery_img_11 from "../../JalAssets/gallery_img_11.jpg";
+import gallery_img_12 from "../../JalAssets/gallery_img_12.jpg";
+import gallery_img_13 from "../../JalAssets/gallery_img_13.jpg";
+import gallery_img_14 from "../../JalAssets/gallery_img_14.jpg";
+import gallery_img_15 from "../../JalAssets/gallery_img_15.jpg";
+import gallery_img_16 from "../../JalAssets/gallery_img_16.jpg";
+import gallery_img_17 from "../../JalAssets/gallery_img_17.jpg";
+import gallery_img_18 from "../../JalAssets/gallery_img_18.jpg";
+import gallery_img_19 from "../../JalAssets/gallery_img_19.jpg";
+import gallery_img_20 from "../../JalAssets/gallery_img_20.jpg";
+import gallery_img_21 from "../../JalAssets/gallery_img_21.jpg";
 import testrimonial_img_1 from "../../JalAssets/testimonial_card_img_1.png";
 import testrimonial_img_2 from "../../JalAssets/testimonial_card_img_2.png";
 import testrimonial_img_3 from "../../JalAssets/testimonial_card_img_3.png";
@@ -104,13 +115,13 @@ function Gallery() {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-           id="gallery-section-2-div-1-2-img" src={gallery_img_3} alt={gallery_img_3} />
+           id="gallery-section-2-div-1-2-img" src={gallery_img_9} alt={gallery_img_9} />
            <motion.img
             variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-           id="gallery-section-2-div-1-2-img" src={gallery_img_4} alt={gallery_img_4} />
+           id="gallery-section-2-div-1-2-img" src={gallery_img_10} alt={gallery_img_10} />
            <motion.img
             variants={matches ? fadeSmallIn("right") :fadeBigIn("right")}
             initial="hidden"
@@ -128,13 +139,61 @@ function Gallery() {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-           id="gallery-section-2-div-1-2-img" src={gallery_img_5} alt={gallery_img_5} />
+           id="gallery-section-2-div-1-2-img" src={gallery_img_11} alt={gallery_img_11} />
            <motion.img
             variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
            id="gallery-section-2-div-1-2-img" src={gallery_img_8} alt={gallery_img_8} />
+           <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_12} alt={gallery_img_12} />
+           <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_13} alt={gallery_img_13} />
+             <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_17} alt={gallery_img_17} />
+           <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_15} alt={gallery_img_15} />
+                      <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_18} alt={gallery_img_18} />
+             <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_19} alt={gallery_img_19} />
+            <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_20} alt={gallery_img_20} />
+            <motion.img
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+           id="gallery-section-2-div-1-2-img" src={gallery_img_21} alt={gallery_img_21} />
           </div>
           </div>
       </section>

@@ -278,11 +278,11 @@ function Home() {
        <p id="home-section-model-div-1-p-1">MODEL NEET 2025</p>
        <div id="home-section-model-div-1-1">
        <img id="home-section-model-div-1-1-icon" src={model_neet_icon} alt={model_neet_icon} />
-       <p id="home-section-model-div-1-1-p-1">Provisional answer has been pulbished</p>
+       <p id="home-section-model-div-1-1-p-1">Provisional answer key been pulbished</p>
        </div>
        <div id="home-section-model-div-1-2">
        <img id="home-section-model-div-1-2-icon" src={model_neet_icon} alt={model_neet_icon} />
-       <p id="home-section-model-div-1-2-p-1">Challenges for the questions will be accepted till 22rd of january 2025.  (6pm).</p>
+       <p id="home-section-model-div-1-2-p-1">Challenges for the questions will be accepted till 22nd of january 2025.  (6pm).</p>
        </div>
        <div id="home-section-model-div-1-3">
        <img id="home-section-model-div-1-3-icon" src={model_neet_icon} alt={model_neet_icon} />
