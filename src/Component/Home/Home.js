@@ -278,7 +278,7 @@ function Home() {
        <p id="home-section-model-div-1-p-1">MODEL NEET 2025</p>
        <div id="home-section-model-div-1-1">
        <img id="home-section-model-div-1-1-icon" src={model_neet_icon} alt={model_neet_icon} />
-       <p id="home-section-model-div-1-1-p-1">Provisional answer  key been pulbished</p>
+       <p id="home-section-model-div-1-1-p-1">Provisional answer key has been published</p>
        </div>
        <div id="home-section-model-div-1-2">
        <img id="home-section-model-div-1-2-icon" src={model_neet_icon} alt={model_neet_icon} />
