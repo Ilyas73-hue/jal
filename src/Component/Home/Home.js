@@ -5,7 +5,8 @@ import home_carousel_img_2 from "../../JalAssets/home_carosel_img_2.jpeg";
 import home_carousel_img_3 from "../../JalAssets/home_carosel_img_3.jpeg";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
-import home_about_slide from "../../JalAssets/home_about_slide_img_1.png";
+import home_about_slide_1 from "../../JalAssets/jal_img_1.png";
+import home_about_slide_2 from "../../JalAssets/jal_img_2.png";
 import home_card_logo_1 from "../../JalAssets/card_logo_1.png";
 import home_card_logo_2 from "../../JalAssets/card_logo_2.png";
 import home_card_logo_3 from "../../JalAssets/card_logo_3.png";
@@ -23,6 +24,9 @@ import testrimonial_img_4 from "../../JalAssets/testimonial_card_img_4.png";
 import { FaStar } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { fadeBigIn, fadeSmallIn } from "./../../variants";
+import model_neet_icon from "../../JalAssets/model_neet_icon.png";
+import { IoMdDownload } from "react-icons/io";
+import model_neet_pdf from "../../JalAssets/neet model 2025.pdf";
 
 function Home() {
 
@@ -187,7 +191,7 @@ function Home() {
        whileInView={'show'}
        viewport={{ once: false, amount: 0.7 }}
        id="home-section-2-div-1-1">
-         <img id="home-section-2-div-1-1-img" src={home_about_slide} alt={home_about_slide} />
+         <img id="home-section-2-div-1-1-img" src={home_about_slide_1} alt={home_about_slide_1} />
        </motion.div>
        <motion.div
        variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
@@ -213,6 +217,82 @@ function Home() {
         </div>
        </motion.div>
     </div>
+
+   <div className='container' id="home-section-2-div-2"> 
+       <motion.div
+          variants={matches ? fadeSmallIn("right") :fadeBigIn("right")}
+          initial="hidden"
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.7 }}
+       id="home-section-2-div-2-1">
+        <div id="home-section-2-div-2-1-1">
+        <p id="home-section-2-div-2-1-1-p-1">Jalal Ahmad</p>
+        </div>
+        <div id="home-section-2-div-2-1-2">
+        <p id="home-section-2-div-2-1-2-p-1">Our Founder and CEO</p>
+        </div>
+        <div id="home-section-2-div-2-1-3">
+        <p id="home-section-2-div-2-1-3-p-1">A Mind Power trainer, Hypnotherapist, Happiness coach, Motivational Speaker and NEET coach from Kerala. </p>
+        </div>
+        <div id="home-section-2-div-2-1-4">
+        <p id="home-section-2-div-2-1-4-p-1">JAL (read as 'Jaal') is the abbreviation of his name where he has worked as a teacher. </p>
+        </div>
+        <div id="home-section-2-div-2-1-5">
+        <p id="home-section-2-div-2-1-5-p-1">He has an experience of 24 years as Lecturer in Chemistry in various medical and engineering entrance coaching centres. Developer of interesting learning strategies for Mastering Organic Chemistry. Helped thousands of NEET aspirants to achieve their goal by implementing an innovative methodology (JAL Principles).</p>
+        </div>
+        <div id="home-section-2-div-2-1-6">
+        <p id="home-section-2-div-2-1-6-p-1">Worked in various entrance coaching centres across Kerala (Calicut, Kottakkal, Manjeri, Thrissur, Kottayam, Alappuzha, Kollam etc).</p>
+        </div>
+        <div id="home-section-2-div-2-1-7">
+        <p id="home-section-2-div-2-1-7-p-1">He has an experience of 13 years in Mind Power Training and has become a certified trainer in Mind Power and in Hypnotherapy under venerable veterans in this field. He has conducted hundreds of workshops for students, teachers, family and public in India and Abroad. Also doing family counselling and Students counselling.</p>
+        </div>
+        <div id="home-section-2-div-2-1-8">
+        <p id="home-section-2-div-2-1-8-p-1">Anbodu JAL ❤️</p>
+        </div>
+        <div id="home-section-2-div-2-1-9">
+        <p id="home-section-2-div-2-1-9-p-1">Jalal Ahmad</p>
+        </div>
+        <div id="home-section-2-div-2-1-10">
+        <p id="home-section-2-div-2-1-10-p-1">9605900090</p>
+        </div>
+        <div id="home-section-2-div-2-1-11">
+        <p id="home-section-2-div-2-1-11-p-1">6383375924</p>
+        </div>
+       </motion.div>
+       <motion.div
+             variants={!matches && fadeBigIn("left")}
+             initial="hidden"
+             whileInView={'show'}
+             viewport={{ once: false, amount: 0.7 }}
+       id="home-section-2-div-2-2">
+       <img id="home-section-2-div-2-1-img" src={home_about_slide_2} alt={home_about_slide_2} />
+       </motion.div>
+   </div>
+
+</section>
+
+{/* model neet academy  */}
+
+<section id="home-section-model">
+  <div className='container' id="home-section-model-div-1">
+       <p id="home-section-model-div-1-p-1">MODEL NEET 2025</p>
+       <div id="home-section-model-div-1-1">
+       <img id="home-section-model-div-1-1-icon" src={model_neet_icon} alt={model_neet_icon} />
+       <p id="home-section-model-div-1-1-p-1">Provisional answer has been pulbished</p>
+       </div>
+       <div id="home-section-model-div-1-2">
+       <img id="home-section-model-div-1-2-icon" src={model_neet_icon} alt={model_neet_icon} />
+       <p id="home-section-model-div-1-2-p-1">Challenges for the questions will be accepted till 22rd of january 2025.  (6pm).</p>
+       </div>
+       <div id="home-section-model-div-1-3">
+       <img id="home-section-model-div-1-3-icon" src={model_neet_icon} alt={model_neet_icon} />
+       <p id="home-section-model-div-1-3-p-1">After analysing the challenges made, the final answer key will be published on 
+       24th of january (8:00pm) here in our official website.</p>
+       </div>
+       <div id="home-section-model-div-1-4">
+           <a  href={model_neet_pdf} download="neet model 2025" id="home-section-model-div-1-4-button">Download<IoMdDownload id="home-section-model-div-1-4-button-icon" /></a>
+       </div>
+  </div>
 </section>
 
 {/* Section 3 */}
@@ -253,6 +333,9 @@ function Home() {
       
        </div>
       </div>
+
+    
+
 </section>
 
 {/* Section 4 */}
