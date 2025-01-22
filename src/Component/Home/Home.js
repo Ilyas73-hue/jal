@@ -282,7 +282,11 @@ function Home() {
        </div>
        <div id="home-section-model-div-1-2">
        <img id="home-section-model-div-1-2-icon" src={model_neet_icon} alt={model_neet_icon} />
-       <p id="home-section-model-div-1-2-p-1">Challenges for the questions will be accepted till 22nd of january 2025.  (6pm).</p>
+       <p id="home-section-model-div-1-2-p-1">Challenges for the questions will be accepted till 23rd of january 2025.  (6pm).</p>
+       </div>
+       <div id="home-section-model-div-1-3">
+       <img id="home-section-model-div-1-3-icon" src={model_neet_icon} alt={model_neet_icon} />
+       <p id="home-section-model-div-1-3-p-1">Challenges should be sent to our WhatsApp number - 8608198608</p>
        </div>
        <div id="home-section-model-div-1-3">
        <img id="home-section-model-div-1-3-icon" src={model_neet_icon} alt={model_neet_icon} />
