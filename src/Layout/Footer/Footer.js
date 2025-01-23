@@ -67,7 +67,7 @@ function Footer() {
                   <FaPhoneAlt id="footer-1-section-1-div-3-2-1-1-icon" />
                   </div>
                   <div id="footer-1-section-1-div-3-2-1-2">
-                    <p id="footer-1-section-1-div-3-2-1-2-p-1">+91 00000 00000</p>
+                    <p id="footer-1-section-1-div-3-2-1-2-p-1">+91 86081 98608</p>
                     </div>
                  </div>
                  <div id="footer-1-section-1-div-3-2-2">
@@ -75,7 +75,7 @@ function Footer() {
                   <MdEmail id="footer-1-section-1-div-3-2-2-1-icon" />
                   </div>
                   <div id="footer-1-section-1-div-3-2-2-2">
-                    <p id="footer-1-section-1-div-3-2-2-2-p-1">Send Us Email</p>
+                    <p id="footer-1-section-1-div-3-2-2-2-p-1">jalneetacademy@gmail.com</p>
                     </div>
                 </div>
                  <div id="footer-1-section-1-div-3-2-3">
@@ -83,7 +83,7 @@ function Footer() {
                   <IoLocationSharp id="footer-1-section-1-div-3-2-3-1-icon" />
                   </div>
                   <div id="footer-1-section-1-div-3-2-3-2">
-                    <p id="footer-1-section-1-div-3-2-3-2-p-1">Get Direction</p>
+                    <p id="footer-1-section-1-div-3-2-3-2-p-1">2nd Floor, MNHA Complex, Trivandrum Rd, near New Bus stand, Vasanth Nagar, Tirunelveli, Tamil Nadu 627005</p>
                     </div>
                 </div>
                 </div>

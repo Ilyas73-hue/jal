@@ -186,7 +186,7 @@ function Home() {
 <section id="home-section-2">
     <div className='container' id="home-section-2-div-1"> 
        <motion.div
-       variants={!matches && fadeBigIn("right")}
+       variants={matches ? fadeSmallIn("right") :fadeBigIn("right")}
        initial="hidden"
        whileInView={'show'}
        viewport={{ once: false, amount: 0.7 }}
@@ -260,7 +260,7 @@ function Home() {
         </div>
        </motion.div>
        <motion.div
-             variants={!matches && fadeBigIn("left")}
+            variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
              initial="hidden"
              whileInView={'show'}
              viewport={{ once: false, amount: 0.7 }}
@@ -491,7 +491,7 @@ function Home() {
 
 {/* Section 7 */}
 
-<section id="home-section-7">
+{/* <section id="home-section-7">
    <div className='container' id="home-section-7-div-1">
     <motion.div
     variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
@@ -504,42 +504,24 @@ function Home() {
     </motion.div>
     <div id="home-section-7-div-1-2">
       <div id="home-section-7-div-1-2-1">
-{
-  testrimonial_data.map((item) => (
+
 <motion.div
 variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
 initial="hidden"
 whileInView={'show'}
 viewport={{ once: false, amount: 0.7 }}
 id="home-section-7-div-1-2-1-card-1">
-              <div id="home-section-7-div-1-2-1-card-1-1">
-                 <img id="home-section-7-div-1-2-1-card-1-1-img" src={testrimonial_logo} alt={testrimonial_logo} />
-              </div>
               <div id="home-section-7-div-1-2-1-card-1-2">
-                 <img id="home-section-7-div-1-2-1-card-1-2-img" src={item.img} alt={item.img} />
-              </div>
-              <div id="home-section-7-div-1-2-1-card-1-3">
-                 <p id="home-section-7-div-1-2-1-card-1-3-p-1">{item.name}</p>
-                 <p id="home-section-7-div-1-2-1-card-1-3-p-2">{item.occupation}</p>
-              </div>
-              <div id="home-section-7-div-1-2-1-card-1-4">
-              <FaStar id="home-section-7-div-1-2-1-card-1-4-star" />
-              <FaStar id="home-section-7-div-1-2-1-card-1-4-star" />
-              <FaStar id="home-section-7-div-1-2-1-card-1-4-star" />
-              <FaStar id="home-section-7-div-1-2-1-card-1-4-star" />
-              <FaStar id="home-section-7-div-1-2-1-card-1-4-star" />
-              </div> 
-              <div id="home-section-7-div-1-2-1-card-1-5">
-                <p id="home-section-7-div-1-2-1-card-1-5-p-1"> {item.description}</p>
+                 <img id="home-section-7-div-1-2-1-card-1-2-img" src="https://i.ytimg.com/vi/amhkhwYy54I/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBsIwNeASbfMgQ-jgicHrATGGybOw" alt="https://i.ytimg.com/vi/amhkhwYy54I/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBsIwNeASbfMgQ-jgicHrATGGybOw" />
+                 <a id="home-section-7-div-1-2-1-card-1-2-img-a-href" target='blank' href="https://youtube.com/shorts/G7-mTI4zp3A?si=ChZ2pZOj6riyzWRj">Watch More</a>
               </div>
          </motion.div>
-  ))
-}
          
       </div>
     </div>
    </div>
-</section>
+</section> */}
+
 
     </div>
   )

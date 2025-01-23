@@ -218,6 +218,7 @@ justify-content: center;
 
 
 #footer-1-section-1-div-3-2-3-2-p-1{
+    width: 200px;
     margin-top: 8px;
     font-family: var(--font1);
     font-size: 15px;
@@ -225,6 +226,19 @@ justify-content: center;
     line-height: 18.23px;
     text-align: justify;
     color: var(--color);
+}
+
+
+@media(max-width: 426px){
+    #footer-1-section-1-div-3-2-3-2-p-1{
+        width: 300px;
+    }
+}
+
+@media(max-width: 325px){
+    #footer-1-section-1-div-3-2-3-2-p-1{
+        width: 240px;
+    }
 }
 
 
