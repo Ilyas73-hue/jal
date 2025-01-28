@@ -645,12 +645,25 @@ text-decoration: none;
 
 #model-test-result{
 padding-bottom: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
+
+
 #model-test-result-img{
-  width: 100%;
+  width: 90%;
   height: 65vh;
 }
+
+@media(max-width: 769px){
+  #model-test-result-img{
+    width: 100%;
+  }
+}
+
+
 
 #model-test-result-div-1{
   display: flex;
@@ -682,6 +695,33 @@ padding-bottom: 20px;
   padding-left: 20px;
   text-decoration: none;
 }
+
+@media(max-width: 500px){
+  #model-test-result-img{
+    width: 100%;
+    height: 30vh;
+  }
+
+  #model-test-result-div-1-p-1{
+    font-size: 18px;
+  }
+
+  #model-test-result-div-1-button{
+    font-family: var(--font1);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color1);
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+  }
+}
+
 
 /* Section 3 */
 
