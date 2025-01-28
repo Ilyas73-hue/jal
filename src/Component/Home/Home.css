@@ -24,6 +24,13 @@
     padding-top: 10vh;
 }
 
+
+@media(max-width: 1440px){
+  #home{
+    padding-top: 16vh;
+}
+}
+
 @media(max-width: 426px){
   #home{
     padding-top: 15.5vh;
@@ -33,7 +40,7 @@
 /* Section 1 */
 
 #d-block {
-    height: 79vh;
+    height: 500px;
     width: 100%;
     /* object-fit: cover; */
   }

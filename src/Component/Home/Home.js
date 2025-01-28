@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import "./Home.css";
 import home_carousel_img_1 from "../../JalAssets/jal_bg.png";
-import home_carousel_img_2 from "../../JalAssets/home_carosel_img_2.jpeg";
+import home_carousel_img_2 from "../../JalAssets/jal_home_bg_2.jpg";
 import home_carousel_img_3 from "../../JalAssets/home_carosel_img_3.jpeg";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
@@ -150,24 +150,13 @@ function Home() {
     <div class="carousel-item">
       <img src={home_carousel_img_2} class="d-block"  id="d-block" alt={home_carousel_img_2} />
     </div>
-    <div class="carousel-item">
+    {/* <div class="carousel-item">
       <img src={home_carousel_img_3} class="d-block"  id="d-block" alt={home_carousel_img_3} />
-    </div>
+    </div> */}
    </div>
-   <div id="carousel-content">
-     <motion.div
-     variants={matches ? fadeSmallIn("left") :fadeBigIn("left")}
-     initial="hidden"
-     whileInView={'show'}
-     viewport={{ once: false, amount: 0.7 }}
-     id="carousel-content-1">
-           <h6 id="carousel-content-1-h6-1">JAL NEET ACADEMY</h6>
-           <h6 id="carousel-content-1-h6-2">The Best NEET Academy for Aspiring 
-           Medical Students</h6>
-           <button id="carousel-content-1-button">Apply Now</button>
-     </motion.div>
-   </div>
- 
+
+
+
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <FaArrowLeft id="home-carosel-left-icon" />
