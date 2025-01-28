@@ -27,6 +27,8 @@ import { fadeBigIn, fadeSmallIn } from "./../../variants";
 import model_neet_icon from "../../JalAssets/model_neet_icon.png";
 import { IoMdDownload } from "react-icons/io";
 import model_neet_pdf from "../../JalAssets/neet model 2025.pdf";
+import model_neet_test from "../../JalAssets/jal_test.jpg";
+import model_neet_result_pdf from "../../JalAssets/MODEL NEET - 25 RANK LIST.pdf";
 
 function Home() {
 
@@ -260,6 +262,16 @@ function Home() {
 
 </section>
 
+{/* model test result */}
+
+<section id="model-test-result">
+  <img id="model-test-result-img" src={model_neet_test} alt={model_neet_test} />
+  <div id="model-test-result-div-1">
+   <p id="model-test-result-div-1-p-1">For Detailed Ranklist</p>
+   <a href={model_neet_result_pdf} download="MODEL NEET - 25 RANK LIST" target='blank' id="model-test-result-div-1-button">Click Here</a>
+  </div>
+</section>
+
 {/* model neet academy  */}
 
 <section id="home-section-model">
@@ -288,7 +300,12 @@ function Home() {
   </div>
 </section>
 
+
+
+
 {/* Section 3 */}
+
+
 
 
 <section id="home-section-3">
