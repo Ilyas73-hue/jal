@@ -20,40 +20,45 @@
 
 
 
-
-
-
 #home{
-  padding-top: 10vh;
+  padding-top: 148px;
 }
 
-
-@media(max-width: 1440px){
-#home{
-  padding-top: 16vh;
-}
-}
-
-@media(max-width: 426px){
-#home{
-  padding-top: 15.5vh;
-}
-}
 
 /* Section 1 */
 
-#d-block {
+#d-block{
     height: 500px;
     width: 100%;
-    /* object-fit: cover; */
   }
   
+@media(max-width: 1024px){
+  #d-block{
+    height: 400px;
+    width: 100%;
+  }
+}
+
+@media(max-width: 769px){
+  #d-block{
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media(max-width: 500px){
+  #d-block{
+    height: 200px;
+    width: 100%;
+  }
+}
+
   #carousel-image {
     position: relative;
   }
   
   #carousel-content {
-    /* height: 79vh; */
+    height: 79vh;
     width: 100%;
     position: absolute;
     top: 0px;
@@ -118,7 +123,7 @@ color: var(--primary-color);
 }
 
 
-@media(max-width: 769px){
+/* @media(max-width: 769px){
   #carousel-content-1-h6-2{
     width: 600px;
   }
@@ -166,7 +171,7 @@ color: var(--primary-color);
     font-size: 30px;
     width: 280px;
   }
-}
+} */
 
 
 /* Section 2 */
@@ -644,26 +649,24 @@ text-decoration: none;
 /* model test results */
 
 #model-test-result{
-padding-bottom: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-
-
-#model-test-result-img{
-  width: 90%;
-  height: 65vh;
-}
-
-@media(max-width: 769px){
-  #model-test-result-img{
-    width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
-}
-
-
+  
+  
+  
+  #model-test-result-img{
+    width: 90%;
+    height: 65vh;
+  }
+  
+  @media(max-width: 769px){
+    #model-test-result-img{
+      width: 100%;
+    }
+  }
 
 #model-test-result-div-1{
   display: flex;
@@ -696,6 +699,14 @@ align-items: center;
   text-decoration: none;
 }
 
+@media(max-width: 1024px){
+  #model-test-result-img{
+    width: 100%;
+    height: 35vh;
+  }
+
+}
+
 @media(max-width: 500px){
   #model-test-result-img{
     width: 100%;
@@ -720,6 +731,23 @@ align-items: center;
     padding-left: 15px;
     text-decoration: none;
   }
+}
+
+
+@media(max-width: 500px){
+  #model-test-result-img{
+    width: 100%;
+    height: 32vh;
+  }
+
+}
+
+@media(max-width: 323px){
+  #model-test-result-img{
+    width: 100%;
+    height: 28vh;
+  }
+
 }
 
 
