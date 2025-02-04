@@ -32,37 +32,38 @@ function WhyChooseus() {
         .addEventListener('change', e => setMatches( e.matches ));
       }, []);
 
-    const why_card_data =[{
+      const why_card_data =[{
         id: 1,
-        name: "Proven Success Record",
-        description: "With years of experience and countless success stories, we’ve earned our reputation as one of the best NEET academies in the country. Our students consistently rank among the top scorers year after year.",
+        name: "Expert Faculties",
+        description: "Highly Experienced & Talented teachers who are super friendly with our students and guides them by providing the right statergy to crack Neet Easily.",
         img: `${home_card_logo_1}`
       }, {
         id: 2,
-        name: "Innovative and Effective Methodology",
-        description: "Our unique teaching methodology is designed to break down complex concepts, making them easy to understand and retain. We utilize interactive learning, modern technology, and an engaging curriculum that ensures concepts are ingrained deeply.",
+        name: "Smart Study Habits",
+        description: "In order to utilise one's full potential and to make their preparation journey a fruitful one, students are engaged with smart study habits such as, preparing short notes, schedule book suriting, score note analysing, solution note writing.",
         img: `${home_card_logo_2}`
       }, {
         id: 3,
-        name: "Expert Faculty",
-        description: "Our team consists of experienced, passionate educators who specialize in NEET preparation and are dedicated to each student’s success. They bring in-depth knowledge and real-world insights to every lesson.",
+        name: "Our Assessment",
+        description: "Exams that challenge, Progress that inspires with various exams such as, RAT, Cumulative Part, Micro, Jumbo, Mega test etc. And most importantly, the after test evaluation, makes them analyse their mistakes and step forward with confidence",
         img: `${home_card_logo_3}`
       }, {
         id: 4,
-        name: "Comprehensive StudyMaterials",
-        description: "We provide carefully curated, up-to-date study materials and resources that cover the entire NEET syllabus. Our study materials are designed to enhance conceptual clarity and problem-solving skills, ensuring that students are fully prepared for the exam.",
+        name: "Personal Attention",
+        description: "Students are provided with individual care such that, their progress are personally interrupted and provided with suitable guidance individually.",
         img: `${home_card_logo_4}`
       }, {
         id: 5,
-        name: "Proven Success Record",
-        description: "Our unique teaching methodology is designed to break down complex concepts, making them easy to understand and retain. We utilize interactive learning, modern technology, and an engaging curriculum that ensures concepts are ingrained deeply.",
+        name: "Motivational Talk",
+        description: "Frequent interaction with students in class to ensure their journey on the right track continuous motivations bu JAL to rectify themselves.",
         img: `${home_card_logo_5}`
       }, {
         id: 6,
-        name: "Regular Assessments and Mock Tests",
-        description: "Our team consists of experienced, passionate educators who specialize in NEET preparation and are dedicated to each student’s success. They bring in-depth knowledge and real-world insights to every lesson.",
+        name: "Mentor Support",
+        description: "Student group are assigned with certain mentors, who guides them and ensure their timely doubt clarifications.",
         img: `${home_card_logo_6}`
       }];
+  
 
       const mission_data = [{
         id: 1,

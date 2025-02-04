@@ -42,11 +42,11 @@ function Home() {
     const why_card_data =[{
       id: 1,
       name: "Expert Faculties",
-      description: "Highly Experienced & Talennted teachers who are super friendly with our students and guides them by providing the right statergy to crack Neet Easily.",
+      description: "Highly Experienced & Talented teachers who are super friendly with our students and guides them by providing the right statergy to crack Neet Easily.",
       img: `${home_card_logo_1}`
     }, {
       id: 2,
-      name: "Start Study Habits",
+      name: "Smart Study Habits",
       description: "In order to utilise one's full potential and to make their preparation journey a fruitful one, students are engaged with smart study habits such as, preparing short notes, schedule book suriting, score note analysing, solution note writing.",
       img: `${home_card_logo_2}`
     }, {
