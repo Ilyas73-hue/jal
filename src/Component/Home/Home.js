@@ -13,12 +13,10 @@ import home_card_logo_6 from "../../JalAssets/card_logo_6.png";
 import mission from "../../JalAssets/mission.png";
 import vision from "../../JalAssets/vision.png";
 import missionvision from "../../JalAssets/mission&vision.png";
-import testrimonial_logo from "../../JalAssets/testimonial_logo.png";
 import testrimonial_img_1 from "../../JalAssets/testimonial_card_img_1.png";
 import testrimonial_img_2 from "../../JalAssets/testimonial_card_img_2.png";
 import testrimonial_img_3 from "../../JalAssets/testimonial_card_img_3.png";
 import testrimonial_img_4 from "../../JalAssets/testimonial_card_img_4.png";
-import { FaStar } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { fadeBigIn, fadeSmallIn } from "./../../variants";
 import model_neet_icon from "../../JalAssets/model_neet_icon.png";
@@ -201,7 +199,7 @@ function Home() {
         <p id="home-section-2-div-1-2-4-p-1">Our teaching team consists of highly qualified, experienced educators who are experts in their respective fields, ensuring students receive the best possible instruction. These dedicated professionals are not just teachers but mentors who guide students every step of the way, helping them overcome academic challenges and pushing them toward success.</p>
         </div>
         <div id="home-section-2-div-1-2-5">
-         <button id="home-section-2-div-1-2-5-button">Read More</button>
+         <button id="home-section-2-div-1-2-5-button" onClick={() => window.location.href = `/about_us`}>Read More</button>
         </div>
        </motion.div>
     </div>

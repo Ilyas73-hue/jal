@@ -23,12 +23,6 @@ function Contact() {
        <section id="contact-section-1">
         <div className='container' id="contact-section-1-div-1">
           <motion.p
-          variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
-                              initial="hidden"
-                              whileInView={'show'}
-                              viewport={{ once: false, amount: 0.7 }}
-          id="contact-section-1-div-1-p-1">JAL NEET ACADEMY</motion.p>
-          <motion.p
           variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
                               initial="hidden"
                               whileInView={'show'}

@@ -76,12 +76,6 @@ function About() {
         <div
         className='container' id="about-section-1-div-1">
           <motion.p
-            variants={matches ? fadeSmallIn("down") :fadeBigIn("down")}
-            initial="hidden"
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
-          id="about-section-1-div-1-p-1">JAL NEET ACADEMY</motion.p>
-          <motion.p
             variants={matches ? fadeSmallIn("up") :fadeBigIn("up")}
             initial="hidden"
             whileInView={'show'}
@@ -126,10 +120,7 @@ function About() {
         id="about-section-2-div-1-2-4">
         <p id="about-section-2-div-1-2-4-p-1">Our teaching team consists of highly qualified, experienced educators who are experts in their respective fields, ensuring students receive the best possible instruction. These dedicated professionals are not just teachers but mentors who guide students every step of the way, helping them overcome academic challenges and pushing them toward success.</p>
         </div>
-        <div
-        id="about-section-2-div-1-2-5">
-         <button id="about-section-2-div-1-2-5-button">Read More</button>
-        </div>
+     
        </motion.div>
     </div>
 </section>

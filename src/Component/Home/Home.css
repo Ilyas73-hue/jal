@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
     --primary-color: #00C7A2;
@@ -16,6 +17,7 @@
     --font3: "Outfit", sans-serif;
     --font4: "Raleway", sans-serif;
     --font5: "Inter", sans-serif;
+    --font6: "Poppins", sans-serif;
 }
 
 
@@ -788,11 +790,17 @@ color: var(--color);
 
 #home-section-3-div-1-2-card{
   width: 350px;
+  height: 278px;
   margin-top: 30px;
+padding: 10px; 
+transition: width .4s;
+}
+
+#home-section-3-div-1-2-card:hover{
+  width: 370px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(173,173,173,1);
 -moz-box-shadow: 0px 0px 10px 0px rgba(173,173,173,1);
 box-shadow: 0px 0px 10px 0px rgba(173,173,173,1);
-padding: 10px; 
 }
 
 #home-section-3-div-1-2-card-1{
@@ -810,7 +818,7 @@ align-items: center;
 }
 
 #home-section-3-div-1-2-card-2-p-1{
-  font-family: var(--font2);
+  font-family: var(--font6);
 font-size: 16px;
 font-weight: 600;
 color: var(--color);
@@ -818,7 +826,7 @@ text-align: center;
 }
 
 #home-section-3-div-1-2-card-3-p-1{
-  font-family: var(--font1);
+  font-family: var(--font2);
 font-size: 12px;
 font-weight: 400;
 line-height: 24px;
@@ -847,6 +855,12 @@ color: var(--color);
 @media(max-width: 325px){
   #home-section-3-div-1-2-card{
     width: 300px;
+  }
+  #home-section-3-div-1-2-card:hover{
+    width: 310px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(173,173,173,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(173,173,173,1);
+  box-shadow: 0px 0px 10px 0px rgba(173,173,173,1);
   }
 }
 
@@ -1111,10 +1125,11 @@ color: var(--color5);
   width: 550px;
   background-color: var(--primary-color);
   height: 2px;
+  margin-bottom: 10px;
 }
 
 #home-section-5-div-1-1-1-1-1{
-  margin-top: 10px;
+  margin-top: 4px;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -1127,6 +1142,8 @@ color: var(--color5);
   color: var(--color5);
   width: 597px;
   margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: justify;
 }
 
 #home-section-5-div-1-2{
@@ -1148,10 +1165,11 @@ color: var(--color5);
   width: 550px;
   background-color: var(--primary-color);
   height: 2px;
+  margin-bottom: 10px;
 }
 
 #home-section-5-div-1-2-2-1-1{
-  margin-top: 10px;
+  margin-top: 4px;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -1164,6 +1182,8 @@ color: var(--color5);
   color: var(--color5);
   width: 597px;
   margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: justify;
 }
 
 @media(max-width: 1320px){
@@ -1215,7 +1235,7 @@ color: var(--color5);
 /* Section 6 */
 
 #home-section-6{
-  background: url("../../JalAssets//home_enquiry_bg.png");
+  background: url("../../JalAssets/jal_neet_academy_logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
@@ -1231,23 +1251,23 @@ color: var(--color5);
 }
 
 #home-section-6-div-1-p-1{
-  font-family: var(--font2);
+  font-family: var(--font6);
 font-size: 18px;
 font-weight: 600;
 line-height: 24px;
 letter-spacing: 0.02em;
 text-align: center;
-color: var(--color1);
+color: var(--color);
 }
 
 
 #home-section-6-div-1-button{
 border: 1px solid var(--primary-color);
-font-family: var(--font1);
+font-family: var(--font2);
 font-size: 18px;
 font-weight: 600;
-background-color: var(--color1);
-color: var(--primary-color);
+background-color: var(--primary-color);
+color: var(--color1);
 padding-top: 10px;
 padding-bottom: 10px;
 padding-left: 20px;
